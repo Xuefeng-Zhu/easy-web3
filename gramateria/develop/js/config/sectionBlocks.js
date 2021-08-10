@@ -5,7 +5,7 @@ export default [
     label: 'Header',
     category: 'Sections',
     attributes: {
-      class: 'fa fa-window-minimize'
+      class: 'fa fa-window-minimize',
     },
     content: `<nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -57,14 +57,14 @@ export default [
         </div>
         <svg class="background-wave" width="1440" height="386" xmlns="http://www.w3.org/2000/svg"><g fill="#09F" fill-rule="nonzero" fill-opacity=".2"><path d="M0 87l26.7 10.7C53.3 108 107 130 160 124.3c53.3-5.3 107-37.3 160-64C373.3 34 427 12 480 12.3 533.3 12 587 34 640 55c53.3 21 107 43 160 21.3C853.3 55 907-9 960 1.7c53.3 10.3 107 96.3 160 122.6 53.3 26.7 107-5.3 160-26.6 53.3-21.7 107-31.7 133-37.4l27-5.3v128H0V87zM0 311l26.7-5.3C53.3 300 107 290 160 311c53.3 21 107 75 160 74.701C373.3 386 427 332 480 311c53.3-21 107-11 160 10.7C693.3 343 747 375 800 359c53.3-16 107-80 160-101.3 53.3-21.7 107 .3 160 21.3 53.3 21 107 43 160 42.7 53.3.3 107-21.7 133-32l27-10.7v-96H0v128z"/></g></svg>
       </section>
-    <style>#hero{position:relative}#hero .background-wave{width:100%;height:600px;position:absolute;top:340px;left:0;z-index:-1} #hero .hero-image{max-width:600px} #hero .hero-image img{width:100%}</style>`
+    <style>#hero{position:relative}#hero .background-wave{width:100%;height:600px;position:absolute;top:340px;left:0;z-index:-1} #hero .hero-image{max-width:600px} #hero .hero-image img{width:100%}</style>`,
   },
   {
-    id: "section-header-two",
-    label: "Header Two",
-    category: "Sections",
+    id: 'section-header-two',
+    label: 'Header Two',
+    category: 'Sections',
     attributes: {
-      class: 'fa fa-window-minimize'
+      class: 'fa fa-window-minimize',
     },
     content: `<section id="header-two" class="bg-white">
       <div class="container">
@@ -122,11 +122,11 @@ export default [
     </section><style>#header-two .d-flex{
     height:500px;
   }
-  
+
   #header-two .col-md-6 svg{
     margin-top:5rem;
   }
-  
+
   @media(max-width:768px){
     #header-two .d-flex{
       height:200px;
@@ -135,14 +135,14 @@ export default [
       margin-top:1rem;
       height:300px;
     }
-  }</style>`
+  }</style>`,
   },
   {
     id: 'section-blog',
     label: 'Blog',
     category: 'Sections',
     attributes: {
-      class: 'fa fa-th-large'
+      class: 'fa fa-th-large',
     },
     content: `<section id="blog">
         <div class="section-header container">
@@ -167,7 +167,7 @@ export default [
                   </div>
                   <p class="post-content mt-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio delectus assumenda, voluptatibus rem labore nesciunt magnam ab provident odio ipsam!
-      
+
                   </p>
                   <button class="btn btn-outline-primary">Continue Reading <span class="ms-2 fa fa-arrow-right"></span></button>
                 </div>
@@ -190,7 +190,7 @@ export default [
                   </div>
                   <p class="post-content mt-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio delectus assumenda, voluptatibus rem labore nesciunt magnam ab provident odio ipsam!
-      
+
                   </p>
                   <button class="btn btn-outline-primary">Continue Reading <span class="ms-2 fa fa-arrow-right"></span></button>
                 </div>
@@ -213,7 +213,7 @@ export default [
                   </div>
                   <p class="post-content mt-3">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio delectus assumenda, voluptatibus rem labore nesciunt magnam ab provident odio ipsam!
-      
+
                   </p>
                   <button class="btn btn-outline-primary">Continue Reading <span class="ms-2 fa fa-arrow-right"></span></button>
                 </div>
@@ -221,21 +221,21 @@ export default [
             </div>
           </div>
         </div>
-      </section>`
+      </section>`,
   },
   {
     id: 'section-testimonial',
     label: 'Testimonial',
     category: 'Sections',
     attributes: {
-      class: 'fa fa-sitemap'
+      class: 'fa fa-sitemap',
     },
     content: `<section id="testimonial">
       <div class="section-header container">
           <h3 class="display-6 p-4 text-uppercase">Testimonials</h3>
         </div>
         <div class="container-fluit">
-       
+
           <div id="splide" class="splide">
             <div class="splide__track">
               <ul class="splide__list">
@@ -269,7 +269,7 @@ export default [
               </ul>
             </div>
           </div>
-      
+
         </div>
       </section>
       <style>
@@ -286,7 +286,7 @@ export default [
       #testimonial .avatar{
         border:1px solid var(--theme-color);
       }
-      
+
       #testimonial .splide__slide .fa-quote-left{
         position:absolute;
         top:54px;
@@ -301,17 +301,16 @@ export default [
           left:auto;
           right:4rem;
       }
-      </style>`
+      </style>`,
   },
   {
-
     id: 'section-gallery',
     label: 'Gallery',
     category: 'Sections',
     attributes: {
-      class: 'fa fa-th'
+      class: 'fa fa-th',
     },
-    content:`<section id="gallery">
+    content: `<section id="gallery">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -371,19 +370,19 @@ export default [
     object-fit:cover;
     cursor:zoom-in;
   }
-  
+
   .image-wrap img:hover{
       transform:scale(0.99);
-  }</style>`
+  }</style>`,
   },
   {
-    id:'section-brands',
-    label:'Brands',
+    id: 'section-brands',
+    label: 'Brands',
     category: 'Sections',
     attributes: {
-       class: 'fa fa-ellipsis-h'
+      class: 'fa fa-ellipsis-h',
     },
-    content:`<section id="brands" class="bg-white">
+    content: `<section id="brands" class="bg-white">
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-3 text-center">
@@ -408,16 +407,16 @@ export default [
     </div>
   </section><style>#brands img{
     opacity:0.3;
- }</style>`
+ }</style>`,
   },
   {
-    id:'section-contact',
-    label:'Contact',
-    category:'Sections',
-    attributes:{
-      class:'fa fa-envelope'
+    id: 'section-contact',
+    label: 'Contact',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-envelope',
     },
-    content:`<section id="contact" class="bg-white">
+    content: `<section id="contact" class="bg-white">
     <div class="container shadow p-5">
       <div class="row">
         <div class="col-lg-6">
@@ -460,35 +459,60 @@ export default [
   </section><style>.address{
       height:500px;
     }
-    
+
     .contact-form .form-group .form-control{
       border:0;
       padding:4px 0;
       border-bottom:1px solid #ddd;
       border-radius:0;
     }
-    
+
     .contact-form .form-group .form-control:focus{
       outline:none;
       box-shadow:none;
       border-bottom:1px solid #0d6efd;
     }
-    
+
     .contact-form .form-group textarea{
       min-height:120px;
-    }</style>`
+    }</style>`,
   },
   {
-    id:'section-subscribe',
-    label:'Subscribe',
-    category:'Sections',
-    attributes:{
-      class:"fa fa-paper-plane"
+    id: 'section-unlock',
+    label: 'Unlock',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-unlock',
     },
-    content:`<section id="subscribe" class="p-3 p-sm-5">
+    content: `
+		<section id="unlock" class="bg-white unlock-content locked">
+			<div class="container shadow p-5">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="unlock-form p-4">
+								<button class="btn btn-primary btn-lg" onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()">
+										<span class="fa fa-unlock me-2"></span>Unlock
+									</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+		</style>`,
+  },
+  {
+    id: 'section-subscribe',
+    label: 'Subscribe',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-paper-plane',
+    },
+    content: `<section id="subscribe" class="p-3 p-sm-5">
     <div class="container">
         <div class="subscribe-wrap d-flex align-items-center justify-content-center p-3 p-sm-5 shadow m-5 bg-white rounded">
-          
+
              <form id="subscribe-form" action="#" method="POST">
                <h2 class="display-6 text-uppercase text-center my-4">Subscribe</h2>
               <div class="input-group">
@@ -499,9 +523,9 @@ export default [
   </div>
                <p class="text-center my-4"><small>Never miss an update from us.</small></p>
             </form>
-          
-          
-          
+
+
+
           <svg class="mail-icon" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="84.44%" y1="83.877%" x2="38.737%" y2="39.717%" id="a"><stop stop-color="#D2DEFF" stop-opacity="0" offset="0%"/><stop stop-color="#B7C5FF" offset="100%"/></linearGradient></defs><g fill-rule="nonzero" fill="none"><path d="M196.044 39.68c-8.733-22.221-35.635-35.547-58.42-26.728-26.009 10.066-17.385 51.434-41.01 59.8-12.76 4.518-31.625-12.361-44.518-14.95C28.338 53.032 6.83 69.796 1.534 93.011c-5.404 23.683 3.262 55.316 29.284 61.744 30.996 7.657 47.141-20.207 73.144-28.207 26.683-8.21 56.352 11.18 78.443-12.413 16.32-17.43 22.287-52.45 13.64-74.454z" fill="url(#a)" transform="translate(0 5)"/><path d="M186.268 54.45c0-15.428-12.507-27.936-27.936-27.936-11.953 0-22.148 7.51-26.137 18.066H31.177a7.812 7.812 0 00-7.813 7.813v86.488a7.812 7.812 0 007.813 7.813h137.646a7.812 7.812 0 007.813-7.813V75.545c5.898-5.122 9.632-12.67 9.632-21.095z" fill="#2626BC" opacity=".1"/><g fill="#FFF"><path d="M168.823 136.928H31.177a7.812 7.812 0 01-7.813-7.812V42.627a7.812 7.812 0 017.813-7.812h137.646a7.812 7.812 0 017.813 7.812v86.489a7.812 7.812 0 01-7.813 7.812z"/><path d="M102.38 72.075l74.256 57.04a7.812 7.812 0 01-7.813 7.813H31.177a7.812 7.812 0 01-7.813-7.812L97.62 72.075a3.906 3.906 0 014.76 0z"/><path d="M97.62 99.669L23.364 42.627a7.812 7.812 0 017.813-7.812h137.646a7.812 7.812 0 017.813 7.812L102.38 99.67a3.907 3.907 0 01-4.76 0z"/></g><path d="M144.901 126.533H132.35a1.953 1.953 0 01-1.953-1.953v-8.654c0-1.078.874-1.953 1.953-1.953H144.9c1.08 0 1.953.875 1.953 1.953v8.654a1.953 1.953 0 01-1.953 1.953z" fill="#6583FE"/><g fill="#0D6EFD"><path d="M121.825 118.571h-10.873a1.953 1.953 0 110-3.906h10.873a1.953 1.953 0 110 3.906zM121.825 126.533H83.609a1.953 1.953 0 110-3.906h38.216a1.953 1.953 0 110 3.906z"/></g><g fill="#0D6EFD" transform="translate(21.094 12.422)"><circle stroke="#FFF" stroke-width="20" transform="rotate(-80.792 137.204 32.266)" cx="137.204" cy="32.266" r="27.933"/><path d="M137.238 62.152c16.481 0 29.89-13.408 29.89-29.89 0-16.48-13.408-29.889-29.89-29.889-16.481 0-29.89 13.409-29.89 29.89 0 9.587 4.543 18.129 11.584 23.602L80.096 85.698c-.7.538-1.678.538-2.38 0L4.294 29.297a5.87 5.87 0 015.789-4.95h89.596a1.953 1.953 0 100-3.907H10.083c-5.385 0-9.766 4.38-9.766 9.765v86.489c0 5.385 4.381 9.765 9.766 9.765h137.646c5.385 0 9.766-4.38 9.766-9.765V65.077a1.953 1.953 0 10-3.906 0v47.653l-51.136-39.28 19.899-15.286a29.694 29.694 0 0014.886 3.988zM55.36 73.45L4.223 112.73V34.17l51.136 39.28zm98.153 44.147c-.437 2.803-2.86 4.956-5.783 4.956H10.083c-2.923 0-5.346-2.153-5.783-4.956l54.266-41.685 16.77 12.883a5.852 5.852 0 003.57 1.211 5.85 5.85 0 003.57-1.21l16.77-12.884 54.266 41.685zm-42.257-85.334c0-14.327 11.656-25.983 25.983-25.983 14.328 0 25.983 11.656 25.983 25.983s-11.655 25.983-25.983 25.983c-14.327 0-25.983-11.656-25.983-25.983z"/></g><path d="M146.138 35.158l3.987 9.527-3.987 9.527c-.677 1.618.957 3.239 2.57 2.55l24.07-10.281c1.58-.676 1.58-2.917 0-3.592l-24.07-10.281c-1.613-.69-3.247.932-2.57 2.55z" fill="#FFF"/><g fill="#6583FE"><path d="M129.23 16.59a5.645 5.645 0 01-4.005-1.656 5.67 5.67 0 010-8.01 5.67 5.67 0 018.01 0 5.67 5.67 0 010 8.01 5.645 5.645 0 01-4.005 1.656zm0-7.418c-.45 0-.9.171-1.244.514a1.76 1.76 0 000 2.486 1.76 1.76 0 002.486 0 1.76 1.76 0 000-2.486 1.753 1.753 0 00-1.242-.514zM85.366 164.107a5.647 5.647 0 01-4.005-1.656 5.67 5.67 0 010-8.01 5.67 5.67 0 018.01 0 5.67 5.67 0 010 8.01 5.646 5.646 0 01-4.005 1.656zm0-7.418c-.45 0-.9.171-1.243.514a1.76 1.76 0 000 2.486 1.76 1.76 0 002.486 0 1.76 1.76 0 000-2.486 1.753 1.753 0 00-1.243-.514zM115.148 21.62c-.5 0-1-.19-1.38-.572l-2.33-2.33-2.33 2.33a1.953 1.953 0 01-2.762-2.762l3.71-3.711c.763-.762 2-.762 2.762 0l3.711 3.71a1.953 1.953 0 01-1.38 3.335zM171.776 156.688c-.5 0-1-.19-1.381-.572l-2.33-2.33-2.33 2.33a1.953 1.953 0 01-2.762-2.762l3.711-3.71c.762-.763 2-.763 2.762 0l3.71 3.71a1.953 1.953 0 01-1.38 3.334zM69.877 158.544c-.5 0-1-.19-1.381-.572l-2.33-2.33-2.33 2.33a1.953 1.953 0 01-2.762-2.762l3.71-3.711c.763-.763 2-.763 2.762 0l3.711 3.71a1.953 1.953 0 01-1.38 3.335z"/></g></g></svg>
       </div>
     </div>
@@ -509,7 +533,7 @@ export default [
     border-top-left-radius:0;
     border-bottom-left-radius:0;
   }
-  
+
   #subscribe{
     background: rgb(13,143,253);
     background: linear-gradient(325deg, rgba(13,143,253,1) 0%, rgba(13,110,253,1) 68%, rgba(29,13,253,1) 100%);
@@ -517,18 +541,18 @@ export default [
   #subscribe .subscribe-wrap{
      position:relative;
   }
-  
+
   #subscribe .subscribe-wrap svg.mail-icon{
     position:absolute;
     top:-80px;
     left:10px;
     z-index:0;
   }
-  
+
   form#subscribe-form{
     width:500px;
   }
-  
+
   @media(max-width:768px){
     form#subscribe-form{
       max-width:500px;
@@ -536,22 +560,22 @@ export default [
     #subscribe .subscribe-wrap svg.mail-icon{
       display:none;
     }
-  }</style>`
+  }</style>`,
   },
   {
-    id:'section-parallax',
-    label:'Parallax',
-    category:'Sections',
-    attributes:{
-      class:"fa fa-copy"
+    id: 'section-parallax',
+    label: 'Parallax',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-copy',
     },
-    content:`<section id="parallax" class="parallax">
+    content: `<section id="parallax" class="parallax">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="parallax-content p-4 shadow bg-white rounded text-center">
-            
-         
+
+
           <h2>Title text</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae repellendus maiores enim dolore nesciunt!</p>
              </div>
@@ -564,30 +588,30 @@ export default [
    opacity:0.8;
    margin-top:150px;
  }
- 
+
  .parallax {
    /* The image used */
    background-image: url("https://picsum.photos/1500");
- 
+
    /* Set a specific height */
    min-height: 500px;
- 
+
    /* Create the parallax scrolling effect */
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
  }
-  </style>`
+  </style>`,
   },
   {
-    id:'section-team',
-    label:'Team',
-    category:'Sections',
-    attributes:{
-      class:'fa fa-th'
+    id: 'section-team',
+    label: 'Team',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-th',
     },
-    content:`<section id="team">
+    content: `<section id="team">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -689,14 +713,14 @@ export default [
             </div>
         </div>
     </div>
-</section>`
+</section>`,
   },
   {
     id: 'section-footer',
     label: 'Footer',
     category: 'Sections',
     attributes: {
-      class: 'fa fa-window-minimize'
+      class: 'fa fa-window-minimize',
     },
     content: `<section id="footer">
       <div class="container py-4">
@@ -753,14 +777,14 @@ export default [
       </div>
     </section><style>#footer .list-group-item {
       background: transparent;
-  }</style>`
+  }</style>`,
   },
   {
     id: 'section-footer-two',
     label: 'Footer Two',
     category: 'Sections',
     attributes: {
-      class: 'fa fa-window-minimize'
+      class: 'fa fa-window-minimize',
     },
     content: `<section id="footer-two">
       <div class="container py-4">
@@ -825,6 +849,6 @@ export default [
   #footer-two .list-group-item {
       background: transparent;
       color: #85a0bd;
-  }</style>`
-  }
-]
+  }</style>`,
+  },
+];

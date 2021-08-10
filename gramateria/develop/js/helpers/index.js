@@ -78,7 +78,7 @@ export const prepareDeployContent = async (data) => {
     new File([getCustomerScripts()], '/js/script.js'),
     new File([data.global.js], '/js/global.js'),
     new File([data.global.css], '/css/global.css'),
-    new File([data.css], '/css/global.css'),
+    new File([data.css], '/css/style.css'),
   ];
 
   return client.put(files);

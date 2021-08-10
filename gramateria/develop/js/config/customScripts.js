@@ -1,9 +1,8 @@
 export default (dependency) => {
-
-    let scriptArr = [
-        {
-            name: 'splidejs',
-            script: `(()=>{
+  let scriptArr = [
+    {
+      name: 'splidejs',
+      script: `(()=>{
                 new Splide('#splide', {
                     type   : 'loop',
                     perPage: 3,
@@ -18,11 +17,11 @@ export default (dependency) => {
                         }
                     }
                 }).mount();
-            })();`
-        },
-        {
-            name: 'contactjs',
-            script:`(()=>{
+            })();`,
+    },
+    {
+      name: 'contactjs',
+      script: `(()=>{
                 const contactForm = document.querySelector("#contactForm");
                 if(!contactForm) return;
                 contactForm.addEventListener('submit', function (e) {
@@ -32,25 +31,30 @@ export default (dependency) => {
                         e.preventDefault()
                         e.stopPropagation()
                       }
-              
+
                       contactForm.classList.add('was-validated')
                 }, false)
              })();
-            `
-        },
-        {
-            name:'glightbox',
-            script:`(()=>{
+            `,
+    },
+    {
+      name: 'glightbox',
+      script: `(()=>{
                 new GLightbox({
                     touchNavigation: true,
                     loop: true,
                     autoplayVideos: true
                 })
-            })()`
-        }
-    ]
+            })()`,
+    },
+    {
+      name: 'unlock',
+      script: `(()=>{
 
-    const dep = scriptArr.filter(e=>e.name === dependency);
-    return dep?dep[0].script:'';
+			})()`,
+    },
+  ];
 
-}
+  const dep = scriptArr.filter((e) => e.name === dependency);
+  return dep ? dep[0].script : '';
+};
