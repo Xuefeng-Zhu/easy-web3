@@ -53,6 +53,26 @@ export default (dependency) => {
 
 			})()`,
     },
+    {
+      name: 'aplayer',
+      script: `(()=>{
+        fetch('https://dn1.monophonic.digital/v1/tracks/trending')
+        .then(response => response.json())
+        .then(({data}) => {
+          console.log(data)
+          new APlayer({
+            container: document.getElementById('aplayer'),
+            audio: data.map(track => ({
+              name: track.title,
+              artist: track.user.name,
+              url: 'https://creatornode2.audius.co/tracks/stream/' + track.id,
+              cover: track.artwork['150x150']
+            }))
+          });
+        });
+
+			})()`,
+    },
   ];
 
   const dep = scriptArr.filter((e) => e.name === dependency);

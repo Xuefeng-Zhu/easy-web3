@@ -503,6 +503,27 @@ export default [
 		</style>`,
   },
   {
+    id: 'section-audius',
+    label: 'Audius',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-music',
+    },
+    content: `
+		<section id="audius" class="bg-white audius-content">
+			<div class="container shadow p-5">
+				<div class="row">
+					<div class="col-lg-12">
+            <div id="aplayer"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+		</style>`,
+  },
+  {
     id: 'section-subscribe',
     label: 'Subscribe',
     category: 'Sections',

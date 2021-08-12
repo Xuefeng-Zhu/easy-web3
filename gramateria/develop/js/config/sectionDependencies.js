@@ -17,4 +17,8 @@ export default [
     name: 'unlock',
     dependencies: ['unlock'],
   },
+  {
+    name: 'audius',
+    dependencies: ['aplayer'],
+  },
 ];
