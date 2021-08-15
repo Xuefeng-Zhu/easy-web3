@@ -20,4 +20,13 @@ export default [
     js: 'https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js',
     css: 'https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css',
   },
+  {
+    name: 'videojs',
+    js: 'https://vjs.zencdn.net/7.14.3/video.min.js',
+    css: 'https://vjs.zencdn.net/7.14.3/video-js.css',
+  },
+  {
+    name: 'videojs-contrib-hls',
+    js: 'https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js',
+  },
 ];

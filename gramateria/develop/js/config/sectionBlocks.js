@@ -524,6 +524,32 @@ export default [
 		</style>`,
   },
   {
+    id: 'section-livepeer',
+    label: 'Livepeer',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-video-camera',
+    },
+    content: `
+		<section id="livepeer" class="bg-white livepeer-content">
+			<div class="container shadow p-5">
+				<div class="row">
+					<div class="col-lg-12">
+            <video
+              id="livepeer-video"
+              class="video-js"
+              controls
+              playsInline
+            ></video>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+		</style>`,
+  },
+  {
     id: 'section-subscribe',
     label: 'Subscribe',
     category: 'Sections',

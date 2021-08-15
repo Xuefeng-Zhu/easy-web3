@@ -370,8 +370,9 @@ class Gramateria {
 
       let hasDependency = sectionDependencies.filter((e) => e.name === section);
       if (hasDependency.length !== 0) {
-        let dependency = hasDependency[0].dependencies[0];
-        this.addDependency(dependency);
+        for (let dependency of hasDependency[0].dependencies) {
+          this.addDependency(dependency);
+        }
       }
     });
   };
@@ -381,8 +382,9 @@ class Gramateria {
       let section = component.attributes.attributes.id;
       let hasDependency = sectionDependencies.filter((e) => e.name === section);
       if (hasDependency.length !== 0) {
-        let dependency = hasDependency[0].dependencies[0];
-        this.removeDependency(dependency);
+        for (let dependency of hasDependency[0].dependencies) {
+          this.removeDependency(dependency);
+        }
       }
     });
   };

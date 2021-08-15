@@ -21,4 +21,8 @@ export default [
     name: 'audius',
     dependencies: ['aplayer'],
   },
+  {
+    name: 'livepeer',
+    dependencies: ['videojs', 'videojs-contrib-hls'],
+  },
 ];

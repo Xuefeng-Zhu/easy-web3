@@ -94,4 +94,49 @@ export default (editor) => {
       return el.id == 'audius';
     },
   });
+
+  domc.addType('livepeer', {
+    model: {
+      defaults: {
+        playbackId: 'f73dc5k6peh7y1dk',
+        traits: [
+          {
+            changeProp: 1,
+            type: 'text',
+            name: 'playbackId',
+          },
+        ],
+        script() {
+          const init = () => {
+            const player = new videojs('livepeer-video', {
+              autoplay: true,
+              controls: true,
+              sources: [
+                {
+                  src: `https://cdn.livepeer.com/hls/{[ playbackId ]}/index.m3u8`,
+                },
+              ],
+            });
+          };
+
+          setTimeout(() => {
+            if (!window.videojs) {
+              const script = document.querySelector(
+                'script[src="https://vjs.zencdn.net/7.14.3/video.min.js"]'
+              );
+              script.onload = init;
+            } else {
+              init();
+            }
+          }, 10);
+        },
+      },
+      init() {
+        this.on('change:playbackId', () => this.trigger('change:script'));
+      },
+    },
+    isComponent(el) {
+      return el.id == 'livepeer';
+    },
+  });
 };
