@@ -138,6 +138,115 @@ export default [
   }</style>`,
   },
   {
+    id: 'section-unlock',
+    label: 'Unlock',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-unlock',
+    },
+    content: `
+		<section id="unlock" class="bg-white unlock-content locked">
+			<div class="container shadow p-5">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="unlock-form p-4">
+								<button class="btn btn-primary btn-lg" onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()">
+										<span class="fa fa-unlock me-2"></span>Unlock
+									</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+		</style>`,
+  },
+  {
+    id: 'section-audius',
+    label: 'Audius',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-music',
+    },
+    content: `
+		<section id="audius" class="bg-white audius-content">
+			<div class="container shadow p-5">
+				<div class="row">
+					<div class="col-lg-12">
+            <div class="aplayer"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+		</style>`,
+  },
+  {
+    id: 'section-livepeer',
+    label: 'Livepeer',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-video-camera',
+    },
+    content: `
+		<section id="livepeer" class="bg-white livepeer-content">
+			<div class="container shadow p-5">
+				<div class="row">
+					<div class="col-lg-12">
+            <video
+              id="livepeer-video"
+              class="video-js"
+              controls
+              playsInline
+            ></video>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+		</style>`,
+  },
+  {
+    id: 'section-zora',
+    label: 'Zora',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-eercast',
+    },
+    content: `
+		<section id="zora" class="bg-white zora-content">
+          <div class="zora-component"></div>
+		</section>
+
+		<style>
+		</style>`,
+  },
+  {
+    id: 'section-coin-price',
+    label: 'Coin Price',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-bitcoin',
+    },
+    content: `
+		<section id="coin-price" class="bg-white coin-price-content">
+          <div class="coin-price-component">
+            <img class="coin-price-logo" height="30" src="https://logos.covalenthq.com/tokens/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png"/>
+            <span class="coin-price-ticker">WBTC: </span>
+            <span class="coin-price-quote">$45957.59</span>
+          </div>
+		</section>
+
+		<style>
+      .coin-price-component img {
+        display: inline-block;
+      }
+		</style>`,
+  },
+  {
     id: 'section-blog',
     label: 'Blog',
     category: 'Sections',
@@ -376,40 +485,6 @@ export default [
   }</style>`,
   },
   {
-    id: 'section-brands',
-    label: 'Brands',
-    category: 'Sections',
-    attributes: {
-      class: 'fa fa-ellipsis-h',
-    },
-    content: `<section id="brands" class="bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-3 text-center">
-          <p class="text-muted mb-2">Google</p><img src="https://cdn.statically.io/gh/ronaldaug/gramateria/refactor/gramateria/develop/svg/brands/google.svg" alt="Google">
-        </div>
-        <div class="col-lg-2 col-md-3 text-center">
-          <p class="text-muted mb-2">Nike</p><img src="https://cdn.statically.io/gh/ronaldaug/gramateria/refactor/gramateria/develop/svg/brands/google.svg" alt="Nike">
-        </div>
-        <div class="col-lg-2 col-md-3 text-center">
-          <p class="text-muted mb-2">Apple</p><img src="https://cdn.statically.io/gh/ronaldaug/gramateria/refactor/gramateria/develop/svg/brands/apple.svg" alt="Apple">
-        </div>
-        <div class="col-lg-2 col-md-3 text-center">
-          <p class="text-muted mb-2">IBM</p><img src="https://cdn.statically.io/gh/ronaldaug/gramateria/refactor/gramateria/develop/svg/brands/ibm.svg" alt="IBM">
-        </div>
-        <div class="col-lg-2 col-md-3 text-center">
-          <p class="text-muted mb-2">Uber</p><img src="https://cdn.statically.io/gh/ronaldaug/gramateria/refactor/gramateria/develop/svg/brands/uber.svg" alt="Uber">
-        </div>
-        <div class="col-lg-2 col-md-3 text-center">
-          <p class="text-muted mb-2">Window</p><img src="https://cdn.statically.io/gh/ronaldaug/gramateria/refactor/gramateria/develop/svg/brands/window.svg" alt="Window">
-        </div>
-      </div>
-    </div>
-  </section><style>#brands img{
-    opacity:0.3;
- }</style>`,
-  },
-  {
     id: 'section-contact',
     label: 'Contact',
     category: 'Sections',
@@ -476,115 +551,6 @@ export default [
     .contact-form .form-group textarea{
       min-height:120px;
     }</style>`,
-  },
-  {
-    id: 'section-unlock',
-    label: 'Unlock',
-    category: 'Sections',
-    attributes: {
-      class: 'fa fa-unlock',
-    },
-    content: `
-		<section id="unlock" class="bg-white unlock-content locked">
-			<div class="container shadow p-5">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="unlock-form p-4">
-								<button class="btn btn-primary btn-lg" onclick="window.unlockProtocol && window.unlockProtocol.loadCheckoutModal()">
-										<span class="fa fa-unlock me-2"></span>Unlock
-									</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<style>
-		</style>`,
-  },
-  {
-    id: 'section-audius',
-    label: 'Audius',
-    category: 'Sections',
-    attributes: {
-      class: 'fa fa-music',
-    },
-    content: `
-		<section id="audius" class="bg-white audius-content">
-			<div class="container shadow p-5">
-				<div class="row">
-					<div class="col-lg-12">
-            <div class="aplayer"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<style>
-		</style>`,
-  },
-  {
-    id: 'section-livepeer',
-    label: 'Livepeer',
-    category: 'Sections',
-    attributes: {
-      class: 'fa fa-video-camera',
-    },
-    content: `
-		<section id="livepeer" class="bg-white livepeer-content">
-			<div class="container shadow p-5">
-				<div class="row">
-					<div class="col-lg-12">
-            <video
-              id="livepeer-video"
-              class="video-js"
-              controls
-              playsInline
-            ></video>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<style>
-		</style>`,
-  },
-  {
-    id: 'section-zora',
-    label: 'Zora',
-    category: 'Sections',
-    attributes: {
-      class: 'fa fa-eercast',
-    },
-    content: `
-		<section id="zora" class="bg-white zora-content">
-          <div class="zora-component"></div>
-		</section>
-
-		<style>
-		</style>`,
-  },
-  {
-    id: 'section-coin-price',
-    label: 'Coin Price',
-    category: 'Sections',
-    attributes: {
-      class: 'fa fa-bitcoin',
-    },
-    content: `
-		<section id="coin-price" class="bg-white coin-price-content">
-          <div class="coin-price-component">
-            <img class="coin-price-logo" height="30" src="https://logos.covalenthq.com/tokens/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png"/>
-            <span class="coin-price-ticker">WBTC: </span>
-            <span class="coin-price-quote">$45957.59</span>
-          </div>
-		</section>
-
-		<style>
-      .coin-price-component img {
-        display: inline-block;
-      }
-		</style>`,
   },
   {
     id: 'section-subscribe',

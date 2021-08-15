@@ -1,75 +1,42 @@
-# Gramateria - v1.0.6 
+# Easy Web3
 
-Gramateria a drag and drop web builder which is built with GrapesJS but with a different look, blocks and components. And v1.0.6 is using Bootstrap 5, can generate a Desktop app with ElectronJS and can deploy to Netlify.
+Easy Web3 is a website builder, which allows non-coder to build a website powered by web3 technology. Users are able to drag and drop web3 enabled component into the canvas to access to the web3 world, such as embed Livepeer stream, music player based on Audius tracks, NFT content on Zora, and coin price. Easy Web3 also integrate Unlock, which can hide certain content behind paywall. Once users are done with editors, they can also click a button and push the website to IPFS.
 
-[DEMO](https://gramateria.netlify.app)
+It is built based on [gramateria](https://github.com/ronaldaug/gramateria)
 
-<img src="https://res.cloudinary.com/dpnea22ek/image/upload/w_1400/v1627100771/gramateria.jpg" />
+[DEMO](https://bafybeibbpnzpurp7c2wqtrxd7i3d7byqz4f2nolxnqxtu7uywmt4aveytu.ipfs.dweb.link/build/)
 
-----
+---
 
-Gramateria v1.0.6 is a re-rewritten version that changed many features and code.
+## Installation
 
-> Although I have stopped developing this app for a while, there are still many users and I feel a little bad because of my old/dirty codes. So I decided to refactor the codes and add some features to be more useful for developers and non-developers in this v1.0.6.
+`npm install`
 
-
-## Installation 
-
-```npm install```
-
-```npm start```
+`npm start`
 
 ## Development
+
 #### Compile sources
 
-```npm run dev```
+`npm run dev`
 
-```npm run watch```
+`npm run watch`
 
-```npm run prod```
-
+`npm run prod`
 
 ## Build desktop app
 
-```npm run pack```
+`npm run pack`
 
-Check `export` folder after running `npm run pack` command. 
+Check `export` folder after running `npm run pack` command.
 
-----
-
-### v1.0.6 Change logs
-
-- Change electron-packager to electron-builder
-- Change Materialize CSS to Bootstrap 5
-- Upgrade Grapesjs to v0.17.19 (latest version)
-- Added Nelify deployment
-- Messy codes to modular code
-- Added laravel mix for script compling 
-- Added new blocks
-- Add Notyf for toast messages
-- Remove Gapesjs export plugin 
-- Remove dashboard version in v1.0.4 which was built with vue.js, element UI and firebase. [reason of removing dashboard](#remove-message)
-
-
-#### Reason of removing dashboard
-<a name="remove-message"></a>
-Because making Gramateria to compatible with Vue, ElementUI and Firebase versions is not an easy task for me. And I want to keep Gramateria as a desktop based app.
-
-#### Roadmap
-- Add more blocks
-- Change icons for section blocks
-- Make it available for linux and window. 
-- Add more SEO tags
-- Build multiple pages 
-- Improve UI
+---
 
 ### Credits
-- Grapesjs [Grapes JS](https://www.grapesjs.com/ "Grapes Js")
-- Bootstrap 5 [Bootstrap 5](https://www.getbootstrap.com/ "Bootstrap 5")
-- Electron JS [Electron JS](https//www.electronjs.org/ "Electron Js")
+
+- [Gramateria](https://github.com/ronaldaug/gramateria)
+- [Grapes JS](https://www.grapesjs.com/ 'Grapes Js')
+- [Bootstrap 5](https://www.getbootstrap.com/ 'Bootstrap 5')
+- [Electron JS](https//www.electronjs.org/ 'Electron Js')
 
 Show your support by 🌟 the project, thanks.
-
-----
-
-[Buy Me a coffee](https://www.buymeacoffee.com/ronaldaug)
