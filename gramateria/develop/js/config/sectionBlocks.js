@@ -574,9 +574,9 @@ export default [
     content: `
 		<section id="coin-price" class="bg-white coin-price-content">
           <div class="coin-price-component">
-            <img height="30" src="https://logos.covalenthq.com/tokens/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png"/>
-            <span>WBTC: </span>
-            <span>$45957.59</span>
+            <img class="coin-price-logo" height="30" src="https://logos.covalenthq.com/tokens/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png"/>
+            <span class="coin-price-ticker">WBTC: </span>
+            <span class="coin-price-quote">$45957.59</span>
           </div>
 		</section>
 

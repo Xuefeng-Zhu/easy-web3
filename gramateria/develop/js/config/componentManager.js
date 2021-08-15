@@ -180,4 +180,57 @@ export default (editor) => {
       return el.id == 'zora';
     },
   });
+
+  domc.addType('coin-price', {
+    model: {
+      defaults: {
+        covalentKey: '',
+        ticker: 'ETH',
+        traits: [
+          {
+            changeProp: 1,
+            type: 'text',
+            name: 'covalentKey',
+          },
+          {
+            changeProp: 1,
+            type: 'text',
+            name: 'ticker',
+          },
+        ],
+        script() {
+          const init = () => {
+            fetch(
+              'https://api.covalenthq.com/v1/pricing/tickers/?tickers={[ ticker ]}&key={[ covalentKey ]}'
+            )
+              .then((response) => response.json())
+              .then(({ data }) => {
+                if (!data) {
+                  return;
+                }
+
+                const item = data.items[0];
+                const logoEl = this.querySelector('.coin-price-logo');
+                const tickerEl = this.querySelector('.coin-price-ticker');
+                const quoteEl = this.querySelector('.coin-price-quote');
+
+                logoEl.setAttribute('src', item.logo_url);
+                tickerEl.innerText = item.contract_ticker_symbol;
+                quoteEl.innerText = item.quote_rate;
+              });
+          };
+
+          init();
+        },
+      },
+      init() {
+        this.on('change:covalentKey change:ticker', () =>
+          this.trigger('change:script')
+        );
+      },
+    },
+    isComponent(el) {
+      return el.id == 'coin-price';
+    },
+  });
 };
