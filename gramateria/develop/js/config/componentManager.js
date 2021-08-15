@@ -61,7 +61,7 @@ export default (editor) => {
               .then((response) => response.json())
               .then(({ data }) => {
                 new APlayer({
-                  container: document.getElementById('aplayer'),
+                  container: this.querySelector('.aplayer'),
                   audio: data.map((track) => ({
                     name: track.title,
                     artist: track.user.name,
@@ -137,6 +137,47 @@ export default (editor) => {
     },
     isComponent(el) {
       return el.id == 'livepeer';
+    },
+  });
+
+  domc.addType('zora', {
+    model: {
+      defaults: {
+        zoraId: '3366',
+        traits: [
+          {
+            changeProp: 1,
+            type: 'text',
+            name: 'zoraId',
+          },
+        ],
+        script() {
+          const init = () => {
+            const zoraComp = this.querySelector('.zora-component');
+            ReactDom.render(
+              React.createElement(NFTPreview, { id: `{[ zoraId ]}` }),
+              zoraComp
+            );
+          };
+
+          setTimeout(() => {
+            if (!window.NFTPreview) {
+              const script = document.querySelector(
+                'script[src="https://bafybeie3isp3mnjqzgwpcgcs5y37r6d74qcrdsvncexilmprxpvoyyvon4.ipfs.dweb.link/index.js"]'
+              );
+              script.onload = init;
+            } else {
+              init();
+            }
+          }, 10);
+        },
+      },
+      init() {
+        this.on('change:zoraId', () => this.trigger('change:script'));
+      },
+    },
+    isComponent(el) {
+      return el.id == 'zora';
     },
   });
 };

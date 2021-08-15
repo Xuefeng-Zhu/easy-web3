@@ -514,7 +514,7 @@ export default [
 			<div class="container shadow p-5">
 				<div class="row">
 					<div class="col-lg-12">
-            <div id="aplayer"></div>
+            <div class="aplayer"></div>
 					</div>
 				</div>
 			</div>
@@ -547,6 +547,43 @@ export default [
 		</section>
 
 		<style>
+		</style>`,
+  },
+  {
+    id: 'section-zora',
+    label: 'Zora',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-eercast',
+    },
+    content: `
+		<section id="zora" class="bg-white zora-content">
+          <div class="zora-component"></div>
+		</section>
+
+		<style>
+		</style>`,
+  },
+  {
+    id: 'section-coin-price',
+    label: 'Coin Price',
+    category: 'Sections',
+    attributes: {
+      class: 'fa fa-bitcoin',
+    },
+    content: `
+		<section id="coin-price" class="bg-white coin-price-content">
+          <div class="coin-price-component">
+            <img height="30" src="https://logos.covalenthq.com/tokens/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599.png"/>
+            <span>WBTC: </span>
+            <span>$45957.59</span>
+          </div>
+		</section>
+
+		<style>
+      .coin-price-component img {
+        display: inline-block;
+      }
 		</style>`,
   },
   {

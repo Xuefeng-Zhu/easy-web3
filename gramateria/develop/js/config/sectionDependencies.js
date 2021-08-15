@@ -25,4 +25,8 @@ export default [
     name: 'livepeer',
     dependencies: ['videojs', 'videojs-contrib-hls'],
   },
+  {
+    name: 'zora',
+    dependencies: ['nft-components'],
+  },
 ];

@@ -29,4 +29,8 @@ export default [
     name: 'videojs-contrib-hls',
     js: 'https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js',
   },
+  {
+    name: 'nft-components',
+    js: 'https://bafybeie3isp3mnjqzgwpcgcs5y37r6d74qcrdsvncexilmprxpvoyyvon4.ipfs.dweb.link/index.js',
+  },
 ];
