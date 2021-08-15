@@ -1,6 +1,7 @@
 import blockManager from './config/blockManager';
 import styleManager from './config/styleManager';
 import customScripts from './config/customScripts';
+import componentManager from './config/componentManager';
 import { addLocal, getLocal } from './helpers/index';
 import assetManager from './config/assetManager';
 import buttons from './config/buttons';
@@ -58,6 +59,7 @@ class Gramateria {
         storeHtml: 1,
         storeCss: 1,
       },
+      plugins: [componentManager],
     };
 
     this.appendDependencies();
@@ -298,12 +300,11 @@ class Gramateria {
         doc.head.appendChild(link);
 
         const script = document.createElement('script');
-        script.src = ds.js;
+        script.src = ds.js || '';
         script.className = ds.name + '-script';
         doc.body.appendChild(script);
 
         dependencies.push(ds);
-
         addLocal('gram-dependencies', dependencies);
 
         resolve(script);
@@ -388,6 +389,7 @@ class Gramateria {
 
   init() {
     this.editor = grapesjs.init(this.config);
+
     this.editor.Panels.addButton('options', buttons);
     this.modal = this.editor.Modal;
     this.codeImportModal();

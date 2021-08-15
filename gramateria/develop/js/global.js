@@ -39,16 +39,3 @@ window.addEventListener('unlockProtocol.status', function (event) {
       element.style.display = 'block';
     });
 });
-
-window.unlockProtocolConfig = {
-  network: '4', // Network ID (1 is for mainnet, 4 for rinkeby, 100 for xDai, etc)
-  locks: {
-    '0x11388bc2E1A958c679a923a6139943228B0F861b': {
-      name: 'Unlock Members',
-    },
-  },
-  icon: 'https://unlock-protocol.com/static/images/svg/unlock-word-mark.svg',
-  callToAction: {
-    default: 'Please unlock to see content!',
-  },
-};
